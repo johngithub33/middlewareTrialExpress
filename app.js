@@ -29,6 +29,7 @@ app.get('/',mymiddleware, tryanothermiddlware, function(r,r,next) {
 
 function mymiddleware(req,res,next) {
     console.log('in mymiddlware')
+    
     if(noerror) next();
     else
     {
